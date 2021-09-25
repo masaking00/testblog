@@ -1,0 +1,10 @@
+{% extends "posts/base.html" %}
+{% block content %}
+
+{% for i in object_list %}
+
+<p>{{ i.pk }}:{{ i.memo }}</p>
+
+{% endfor %}
+
+{% endblock %}
